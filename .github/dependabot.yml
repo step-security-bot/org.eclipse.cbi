@@ -7,3 +7,138 @@ updates:
   open-pull-requests-limit: 10
   reviewers:
   - mbarbero
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /bom
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /build-parent
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /checkstyle
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /common
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /integration-tests
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /maven-plugins/common
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /maven-plugins/eclipse-cbi-plugin
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /maven-plugins/eclipse-dmg-packager/demo
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /maven-plugins/eclipse-dmg-packager
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /maven-plugins/eclipse-flatpak-packager
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /maven-plugins/eclipse-jarsigner-plugin
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /maven-plugins/eclipse-macsigner-plugin
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /maven-plugins/eclipse-winsigner-plugin
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /maven-plugins
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /releng/env
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /utilities/org.eclipse.cbi.releng.tools
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /webservice/common
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /webservice/packaging/dmg
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /webservice/packaging/flatpak
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /webservice/packaging
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /webservice
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /webservice/signing/jar
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /webservice/signing/macosx
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /webservice/signing
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /webservice/signing/windows
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /website/themes/solstice
+    schedule:
+      interval: daily
